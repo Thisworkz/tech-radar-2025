@@ -1,0 +1,11 @@
+name = "Tech radar"
+license = ""
+
+description = "Theme for the techradar"
+tags = []
+features = ["blog", "company", "responsive", "seo-friendly"]
+min_version = "0.144.0"
+
+[author]
+  name = "Kokkelaar"
+  
