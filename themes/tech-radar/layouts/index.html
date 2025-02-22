@@ -3,15 +3,8 @@
 {{ $csv := readFile "static/data/radar.csv" | transform.Unmarshal (dict "delimiter" ";")}}
 
 <!-- content -->
-<section class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 content">
-                {{ .Content }}
-            </div>
-        </div>
-    </div>
-</section>
+
+
 <section class="section pt-0">
     <div class="row">
         <div class="col-12 content">
@@ -19,6 +12,7 @@
                 <div id="radar"></div>
             </div>
         </div>
+
     </div>
 </section>
 <!-- /content -->

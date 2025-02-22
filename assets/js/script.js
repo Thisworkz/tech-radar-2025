@@ -27,42 +27,6 @@
     });
   });
 
-  //Hero Slider
-  $(".hero-slider").slick({
-    autoplay: true,
-    autoplaySpeed: 7500,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    infinite: true,
-    arrows: true,
-    fade: true,
-    prevArrow:
-      "<button type='button' class='prevArrow'><i class='ti-angle-left'></i></button>",
-    nextArrow:
-      "<button type='button' class='nextArrow'><i class='ti-angle-right'></i></button>",
-    dots: true,
-  });
-  $(".hero-slider").slickAnimation();
-
-  // venobox popup
-  $(document).ready(function () {
-    $(".venobox").venobox();
-  });
-
-  // filter
-  $(document).ready(function () {
-    var containerEl = document.querySelector(".filtr-container");
-    var filterizd;
-    if (containerEl) {
-      filterizd = $(".filtr-container").filterizr({});
-    }
-    //Active changer
-    $(".filter-controls li").on("click", function () {
-      $(".filter-controls li").removeClass("active");
-      $(this).addClass("active");
-    });
-  });
-
   //  Count Up
   function counter() {
     var oTop;
@@ -108,77 +72,6 @@
     });
   });
 
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoPlaySpeed: 1000,
-    autoPlayTimeout: 1000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
-    },
-  });
-
-  $(function () {
-    window.sr = ScrollReveal();
-
-    if ($(window).width() < 768) {
-      if ($(".timeline-content").hasClass("js--fadeInLeft")) {
-        $(".timeline-content")
-          .removeClass("js--fadeInLeft")
-          .addClass("js--fadeInRight");
-      }
-
-      sr.reveal(".js--fadeInRight", {
-        origin: "right",
-        distance: "300px",
-        easing: "ease-in-out",
-        duration: 800,
-      });
-    } else {
-      sr.reveal(".js--fadeInLeft", {
-        origin: "left",
-        distance: "300px",
-        easing: "ease-in-out",
-        duration: 800,
-      });
-
-      sr.reveal(".js--fadeInRight", {
-        origin: "right",
-        distance: "300px",
-        easing: "ease-in-out",
-        duration: 800,
-      });
-    }
-
-    sr.reveal(".js--fadeInLeft", {
-      origin: "left",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
-    });
-
-    sr.reveal(".js--fadeInRight", {
-      origin: "right",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
-    });
-  });
-
-  if ($(".rellax").length) {
-    new Rellax(".rellax", {
-      center: true,
-    });
-  }
 
   if ($("#radar").length) {
     fetch("data/radar.csv")

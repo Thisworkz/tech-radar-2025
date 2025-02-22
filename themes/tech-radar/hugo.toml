@@ -1,0 +1,26 @@
+baseURL = ''
+languageCode = 'en-US'
+title = 'Blipz Tech Radar 2025'
+
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.128.0"
+
+
+[params]
+logo = "images/logo.png"
+
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/tech-radar/d3.min.js"
+[[params.plugins.js]]
+link = "plugins/tech-radar/random.js"
+[[params.plugins.js]]
+link = "plugins/tech-radar/tech-radar.js"
