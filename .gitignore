@@ -19,6 +19,7 @@ hugo.linux
 ### Sass ###
 .sass-cache/
 *.css.map
+!*.min.css.map
 *.sass.map
 *.scss.map
 
