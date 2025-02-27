@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Hacking the High-Pressure",
+        "ring": "Hold it",
+        "quadrant": "Security",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Purrfect pentesting",
+        "ring": "Hold it",
+        "quadrant": "Security",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Bring a crew to do your job",
+        "ring": "Hold it",
+        "quadrant": "DevOps",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Decoding the Cosmos",
+        "ring": "Hold it",
+        "quadrant": "Data",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Beyond Containers",
+        "ring": "Hold it",
+        "quadrant": "Cloud",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "From Bottleneck to Enabler",
+        "ring": "Hold it",
+        "quadrant": "Cloud",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Neurodiversity",
+        "ring": "Hold it",
+        "quadrant": "DevOps",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "AiTM",
+        "ring": "Hold it",
+        "quadrant": "Security",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "AI Coding Agents",
+        "ring": "Hold it",
+        "quadrant": "Data",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Quantum computing",
+        "ring": "Hold it",
+        "quadrant": "Data",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Rapid prototyping",
+        "ring": "Hold it",
+        "quadrant": "Cloud",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Non-prod considered harmful",
+        "ring": "Hold it",
+        "quadrant": "Cloud",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Moving Fast and Staying Aligned",
+        "ring": "Hold it",
+        "quadrant": "DevOps",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Getting Unstuck",
+        "ring": "Hold it",
+        "quadrant": "DevOps",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Rethinking (AI) databases",
+        "ring": "Hold it",
+        "quadrant": "Data",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Heat your cold",
+        "ring": "Hold it",
+        "quadrant": "Data",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    },
+    {
+        "name": "Vulnerability management",
+        "ring": "Hold it",
+        "quadrant": "Security",
+        "isNew": "FALSE",
+        "description": "",
+        "suggested by": ""
+    }
+]

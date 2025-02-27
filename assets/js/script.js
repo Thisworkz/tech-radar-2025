@@ -1,78 +1,6 @@
 (function ($) {
   "use strict";
 
-  // Preloader js
-  $(window).on("load", function () {
-    $(".preloader").fadeOut(100);
-  });
-
-  // Sticky Menu
-  $(window).scroll(function () {
-    var height = $(".top-header").innerHeight();
-    if ($("header").offset().top > 10) {
-      $(".top-header").addClass("hide");
-      $(".navigation").addClass("nav-bg");
-      $(".navigation").css("margin-top", "-" + height + "px");
-    } else {
-      $(".top-header").removeClass("hide");
-      $(".navigation").removeClass("nav-bg");
-      $(".navigation").css("margin-top", "-" + 0 + "px");
-    }
-  });
-
-  // Background-images
-  $("[data-background]").each(function () {
-    $(this).css({
-      "background-image": "url(" + $(this).data("background") + ")",
-    });
-  });
-
-  //  Count Up
-  function counter() {
-    var oTop;
-    if ($(".count").length !== 0) {
-      oTop = $(".count").offset().top - window.innerHeight;
-    }
-    if ($(window).scrollTop() > oTop) {
-      $(".count").each(function () {
-        var $this = $(this),
-          countTo = $this.attr("data-count");
-        $({
-          countNum: $this.text(),
-        }).animate(
-          {
-            countNum: countTo,
-          },
-          {
-            duration: 1000,
-            easing: "swing",
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(this.countNum);
-            },
-          }
-        );
-      });
-    }
-  }
-  $(window).on("scroll", function () {
-    counter();
-  });
-
-  // Animation
-  $(document).ready(function () {
-    $(".has-animation").each(function (index) {
-      $(this)
-        .delay($(this).data("delay"))
-        .queue(function () {
-          $(this).addClass("animate-in");
-        });
-    });
-  });
-
-
   if ($("#radar").length) {
     fetch("data/radar.csv")
       .then(function (resp) {
@@ -83,9 +11,23 @@
         var entries = psv.parse(csv, function (row) {
           return toEntry(row);
         });
+        // draw_radar(entries);
+      });
+  }
+
+  if ($("#radar").length) {
+    fetch("https://api.jsonbin.io/v3/b/67c080ddacd3cb34a8f20c19")
+      .then(function (resp) {
+        return resp.json();
+      })
+      .then(function (json) {
+        var entries = json.record.map((element) => {
+          return toEntry(element);
+        });
         draw_radar(entries);
       });
   }
+
 
   let $radarLegend = $("#radar-legend");
 
@@ -116,14 +58,10 @@ function draw_radar(my_entries) {
       $(`tr.radar-item`).removeClass("active");
       $(`tr.radar-item-description`).addClass("hidden");
       $(`tr.radar-item[data-id=${i + 1}]`, $radarLegend).addClass("active");
-      $(
-        `tr.radar-item-description[data-id=${i + 1}]`,
-        $radarLegend
-      ).removeClass("hidden");
+      $(`tr.radar-item-description[data-id=${i + 1}]`, $radarLegend).removeClass("hidden");
 
       let headerHeight = $(".fixed-top.header").height();
-      let y =
-        el.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      let y = el.getBoundingClientRect().top + window.scrollY - headerHeight;
 
       window.scrollTo({ top: y, behavior: "smooth" });
     },
@@ -131,6 +69,7 @@ function draw_radar(my_entries) {
 }
 
 function toEntry(row) {
+  
   return {
     name: row.name,
     category: row.quadrant,
