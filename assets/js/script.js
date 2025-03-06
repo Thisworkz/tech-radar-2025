@@ -16,7 +16,12 @@
   }
 
   if ($("#radar").length) {
-    fetch("https://api.jsonbin.io/v3/b/67c080ddacd3cb34a8f20c19")
+    fetch("https://api.jsonbin.io/v3/b/67c9a7dae41b4d34e4a1d3d3", {
+      headers: {
+        "X-Access-Key":
+          "$2a$10$KLQNcFWrJKXqQoPoeVPnPOKwBZ8raBULxl3h5P5iJr2EZMEoA1Xhu",
+      },
+    })
       .then(function (resp) {
         return resp.json();
       })
