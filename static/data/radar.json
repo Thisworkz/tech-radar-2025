@@ -1,138 +1,161 @@
-[
-    {
-        "name": "Hacking the High-Pressure",
-        "ring": "Hold it",
-        "quadrant": "Security",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Purrfect pentesting",
-        "ring": "Hold it",
-        "quadrant": "Security",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Bring a crew to do your job",
-        "ring": "Hold it",
-        "quadrant": "DevOps",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Decoding the Cosmos",
-        "ring": "Hold it",
-        "quadrant": "Data",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Beyond Containers",
-        "ring": "Hold it",
-        "quadrant": "Cloud",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "From Bottleneck to Enabler",
-        "ring": "Hold it",
-        "quadrant": "Cloud",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Neurodiversity",
-        "ring": "Hold it",
-        "quadrant": "DevOps",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "AiTM",
-        "ring": "Hold it",
-        "quadrant": "Security",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "AI Coding Agents",
-        "ring": "Hold it",
-        "quadrant": "Data",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Quantum computing",
-        "ring": "Hold it",
-        "quadrant": "Data",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Rapid prototyping",
-        "ring": "Hold it",
-        "quadrant": "Cloud",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Non-prod considered harmful",
-        "ring": "Hold it",
-        "quadrant": "Cloud",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Moving Fast and Staying Aligned",
-        "ring": "Hold it",
-        "quadrant": "DevOps",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Getting Unstuck",
-        "ring": "Hold it",
-        "quadrant": "DevOps",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Rethinking (AI) databases",
-        "ring": "Hold it",
-        "quadrant": "Data",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Heat your cold",
-        "ring": "Hold it",
-        "quadrant": "Data",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
-    },
-    {
-        "name": "Vulnerability management",
-        "ring": "Hold it",
-        "quadrant": "Security",
-        "isNew": "FALSE",
-        "description": "",
-        "suggested by": ""
+{
+    "record": [
+        {
+            "name": "High performance team formation",
+            "ring": "Try it",
+            "quadrant": "Security",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "MIAW methodology",
+            "ring": "Use it",
+            "quadrant": "Security",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Multi-agent AI",
+            "ring": "Try it",
+            "quadrant": "DevOps",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Algorithms from the past",
+            "ring": "Know it",
+            "quadrant": "Data",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "WASM on Kubernetes",
+            "ring": "Try it",
+            "quadrant": "Cloud",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Platform engineering",
+            "ring": "Use it",
+            "quadrant": "Cloud",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Creating a culture of belonging",
+            "ring": "Use it",
+            "quadrant": "DevOps",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "AiTM mitigation",
+            "ring": "Try it",
+            "quadrant": "Security",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Agentic AI",
+            "ring": "Know it",
+            "quadrant": "Data",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Quantum Computing",
+            "ring": "Know it",
+            "quadrant": "Data",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Rapid prototyping",
+            "ring": "Try it",
+            "quadrant": "Cloud",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Prod only development",
+            "ring": "Try it",
+            "quadrant": "Cloud",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Automating everything",
+            "ring": "Know it",
+            "quadrant": "DevOps",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Unstuck methodology",
+            "ring": "Try it",
+            "quadrant": "DevOps",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Serverless databases",
+            "ring": "Try it",
+            "quadrant": "Data",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Pydantic for LLMs",
+            "ring": "Know it",
+            "quadrant": "Data",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "DefectDojo",
+            "ring": "Try it",
+            "quadrant": "Security",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Uncertainty decision making",
+            "ring": "Use it",
+            "quadrant": "DevOps",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        },
+        {
+            "name": "Local AI",
+            "ring": "Know it",
+            "quadrant": "Data",
+            "isNew": "FALSE",
+            "description": "",
+            "suggested by": ""
+        }
+    ],
+    "metadata": {
+        "id": "67c9a7dae41b4d34e4a1d3d3",
+        "private": true,
+        "createdAt": "2025-03-06T13:49:14.850Z"
     }
-]
+}

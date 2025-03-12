@@ -2,26 +2,38 @@
   "use strict";
 
   if ($("#radar").length) {
-    fetch("data/radar.csv")
-      .then(function (resp) {
-        return resp.text();
-      })
-      .then(function (csv) {
-        let psv = d3.dsvFormat(";");
-        var entries = psv.parse(csv, function (row) {
-          return toEntry(row);
-        });
-        // draw_radar(entries);
-      });
-  }
+    // csv version
+    // fetch("data/radar.csv")
+    //   .then(function (resp) {
+    //     return resp.text();
+    //   })
+    //   .then(function (csv) {
+    //     let psv = d3.dsvFormat(";");
+    //     var entries = psv.parse(csv, function (row) {
+    //       return toEntry(row);
+    //     });
+    //     // draw_radar(entries);
+    //   });
 
-  if ($("#radar").length) {
-    fetch("https://api.jsonbin.io/v3/b/67c9a7dae41b4d34e4a1d3d3", {
-      headers: {
-        "X-Access-Key":
-          "$2a$10$KLQNcFWrJKXqQoPoeVPnPOKwBZ8raBULxl3h5P5iJr2EZMEoA1Xhu",
-      },
-    })
+    // remote version
+    // fetch("https://api.jsonbin.io/v3/b/67c9a7dae41b4d34e4a1d3d3", {
+    //   headers: {
+    //     "X-Access-Key":
+    //       "",
+    //   },
+    // })
+    //   .then(function (resp) {
+    //     return resp.json();
+    //   })
+    //   .then(function (json) {
+    //     var entries = json.record.map((element) => {
+    //       return toEntry(element);
+    //     });
+    //     draw_radar(entries);
+    //   });
+
+    // local json version
+    fetch("data/radar.json")
       .then(function (resp) {
         return resp.json();
       })
@@ -32,7 +44,6 @@
         draw_radar(entries);
       });
   }
-
 
   let $radarLegend = $("#radar-legend");
 
@@ -63,7 +74,10 @@ function draw_radar(my_entries) {
       $(`tr.radar-item`).removeClass("active");
       $(`tr.radar-item-description`).addClass("hidden");
       $(`tr.radar-item[data-id=${i + 1}]`, $radarLegend).addClass("active");
-      $(`tr.radar-item-description[data-id=${i + 1}]`, $radarLegend).removeClass("hidden");
+      $(
+        `tr.radar-item-description[data-id=${i + 1}]`,
+        $radarLegend
+      ).removeClass("hidden");
 
       let headerHeight = $(".fixed-top.header").height();
       let y = el.getBoundingClientRect().top + window.scrollY - headerHeight;
@@ -74,7 +88,6 @@ function draw_radar(my_entries) {
 }
 
 function toEntry(row) {
-  
   return {
     name: row.name,
     category: row.quadrant,
@@ -108,12 +121,4 @@ var rings = [
   },
 ];
 
-var quadrants = [
-  "DevOps",
-  "Data",
-  "Security",
-  "Cloud",
-];
-
-
-
+var quadrants = ["DevOps", "Data", "Security", "Cloud"];
